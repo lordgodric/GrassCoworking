@@ -1,0 +1,252 @@
+@import url(skeleton.css);
+@import url(normalize.css);
+nav {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #D1D1D1;
+  height: 80px; }
+  nav a.logo {
+    white-space: nowrap;
+    text-decoration: none; }
+    nav a.logo img {
+      max-width: 55px;
+      min-width: 55px;
+      margin: 15px 10px 15px 0px; }
+      @media (max-width: 760px) {
+        nav a.logo img {
+          width: 50%; } }
+    nav a.logo span {
+      display: inline-block;
+      position: absolute;
+      top: 25px;
+      font-weight: bold;
+      text-align: left;
+      color: #000;
+      font-size: 2rem; }
+      @media (max-width: 760px) {
+        nav a.logo span {
+          font-size: 2rem; } }
+      @media (max-width: 550px) {
+        nav a.logo span {
+          top: 30px;
+          font-size: 1.5rem; } }
+  nav .menu {
+    padding-top: 15px; }
+    nav .menu .hamburger {
+      margin-top: 10px;
+      cursor: pointer; }
+      @media (max-width: 1001px) {
+        nav .menu .hamburger {
+          display: block; } }
+      @media (min-width: 1001px) {
+        nav .menu .hamburger {
+          display: none; } }
+    nav .menu ul {
+      display: inline-block;
+      list-style: none;
+      margin-bottom: 0;
+      text-align: center; }
+      @media (max-width: 1000px) {
+        nav .menu ul {
+          position: absolute;
+          top: 80px;
+          left: 50%;
+          margin-left: -50px; } }
+      nav .menu ul li {
+        display: inline-block;
+        padding: 10px 20px 0 0; }
+        @media (max-width: 1000px) {
+          nav .menu ul li {
+            display: none; } }
+        @media (min-width: 1001px) {
+          nav .menu ul li {
+            display: inline-block; } }
+        nav .menu ul li a {
+          text-decoration: none;
+          color: #000;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 18px;
+          letter-spacing: 1px; }
+          @media (max-width: 1000px) {
+            nav .menu ul li a {
+              font-size: 14px; } }
+          nav .menu ul li a:hover {
+            color: #59BB33; }
+          nav .menu ul li a p {
+            margin-bottom: 0; }
+
+.nav-menu-open {
+  height: 300px; }
+  @media (max-width: 1000px) {
+    .nav-menu-open {
+      height: 300px; } }
+  @media (min-width: 1000px) {
+    .nav-menu-open {
+      height: 80px; } }
+  .nav-menu-open .menu ul li {
+    display: block; }
+    @media (max-width: 1000px) {
+      .nav-menu-open .menu ul li {
+        padding-right: 0; } }
+    @media (min-width: 1000px) {
+      .nav-menu-open .menu ul li {
+        display: inline-block; } }
+
+.adminmain {
+  background-color: #E4F6F6; }
+  .adminmain table {
+    text-align: center;
+    margin-top: 50px; }
+    .adminmain table th, .adminmain table td {
+      text-align: center;
+      border-right: 50px; }
+      @media (max-width: 470px) {
+        .adminmain table th, .adminmain table td {
+          font-size: 10px; } }
+    @media (max-width: 560px) {
+      .adminmain table tr td:first-child {
+        font-weight: bold; }
+      .adminmain table tr td {
+        text-align: center; } }
+
+p {
+  margin: 0; }
+
+.popup-create {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s; }
+  .popup-create .is-visible {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s; }
+
+.popup-create-container {
+  transform: translateY(-40px);
+  transition-property: transform;
+  transition-duration: 0.3s; }
+
+.is-visible .popup-create-container {
+  padding: 20px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: #FCFFC9;
+  transform: translateY(0); }
+  .is-visible .popup-create-container input {
+    margin-bottom: 10px; }
+
+.popup-view {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s; }
+  .popup-view .is-visible {
+    opacity: 1;
+    display: block;
+    transition: opacity 0.3s 0s, visibility 0s 0s; }
+
+.popup-view-container {
+  transform: translateY(-40px);
+  transition-property: transform;
+  transition-duration: 0.3s; }
+
+.is-visible .popup-view-container {
+  padding: 20px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: #FCFFC9;
+  transform: translateY(0); }
+  .is-visible .popup-view-container input {
+    margin-bottom: 10px; }
+
+.popup-edit {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s; }
+  .popup-edit .is-visible {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s; }
+
+.popup-edit-container {
+  transform: translateY(-40px);
+  transition-property: transform;
+  transition-duration: 0.3s; }
+
+.is-visible .popup-edit-container {
+  padding: 20px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: #FCFFC9;
+  transform: translateY(0); }
+  .is-visible .popup-edit-container input {
+    margin-bottom: 10px; }
+
+.popup-login {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s; }
+  .popup-login .is-visible {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s; }
+
+.popup-login-container {
+  transform: translateY(-40px);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  max-width: 277px;
+  height: 350px; }
+
+.is-visible .popup-login-container {
+  padding: 20px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: #FCFFC9;
+  transform: translateY(0); }
+  .is-visible .popup-login-container input {
+    margin-bottom: 10px; }
+
+.popup-subscribe {
+  height: 0px;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s; }
+  .popup-subscribe .is-visible {
+    opacity: 1;
+    display: block;
+    transition: opacity 0.3s 0s, visibility 0s 0s; }
+
+.popup-subscribe-container {
+  transform: translateY(-40px);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  max-width: 300px;
+  height: 290px; }
+
+.is-visible .popup-subscribe-container {
+  padding: 20px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: #FCFFC9;
+  transform: translateY(0); }
+  .is-visible .popup-subscribe-container input {
+    margin-bottom: 10px; }

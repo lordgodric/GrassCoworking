@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	title Grass Coworking
+	link(rel="stylesheet", href="assets/css/main.css")
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+	script(src="assets/js/hideShowPassword.js")
+	script(src="assets/js/script.js")
+	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
+body
+	header
+		nav.section
+			.container
+				a(href="#").row.logo.u-pull-left
+					img(src="assets/img/coworking-logo2.png", alt="grass coworking header logo")
+					span.upp Grass Coworking
+				.menu.u-pull-right.row
+					<i class="fa fa-bars hamburger fa-2x" aria-hidden="true"></i>
+					ul
+						li
+							a(href="#") 
+								p home
+						li
+							a(href="#price") 
+								p price
+						li
+							a(href="#events") 
+								p events
+						li
+							a(href="#contact-us") 
+								p contact us
+						li
+							a(href="#").login
+								p log in <i class="fa fa-sign-in" aria-hidden="true"></i>
+	
+	main
+		.price.section
+			.container
+				.row
+					a(href="#" name="price")
+						h4 Price
+					.offer.first-offer.three.columns
+						h5 Free
+						p <i class="fa fa-leaf fa-2x" aria-hidden="true"></i>
+						p First day
+						button.button order
+					.offer.second-offer.three.columns
+						h5 40 UAH 
+						p <i class="fa fa-money fa-2x" aria-hidden="true"></i>
+						p One day
+						button.button order
+					.offer.third-offer.three.columns
+						h5 150 UAH
+						p <i class="fa fa-money fa-2x" aria-hidden="true"></i> <i class="fa fa-money fa-2x" aria-hidden="true"></i> 
+						p One week
+						button.button order
+					.offer.fourth-offer.three.columns
+						h5 500 UAH
+						p <i class="fa fa-money fa-2x" aria-hidden="true"></i> <i class="fa fa-money fa-2x" aria-hidden="true"></i> <i class="fa fa-money fa-2x" aria-hidden="true"></i>
+						p One mounth
+						button.button order
+
+		.events.section
+			.container
+				.row
+					a(href="#" name="events")
+						h4 Events
+				article.row.first-article
+					img(src="assets/img/jade.png", alt="jade rabbit").three.columns
+					.description.nine.columns
+						h5.article-header Jade
+						p.article-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quisquam amet tenetur ullam deleniti architecto, optio quidem voluptates molestias maxime!
+						p.data.date-begin.row <i class="fa fa-calendar" aria-hidden="true"></i> Begin: 21.04.2016
+						p.data.data-end.row <i class="fa fa-calendar" aria-hidden="true"></i> End: 21.04.2016
+						p.address <i class="fa fa-map-marker" aria-hidden="true"></i> Address: 13 kuibysheva street
+						p.cost <i class="fa fa-money" aria-hidden="true"></i> Cost: free
+				article.row
+					img(src="assets/img/sass.png", alt="jade rabbit").three.columns
+					.description.nine.columns
+						h5.article-header Sass
+						p.article-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quisquam amet tenetur ullam deleniti architecto, optio quidem voluptates molestias maxime!
+						p.data.date-begin.row <i class="fa fa-calendar" aria-hidden="true"></i> Begin: 21.04.2016
+						p.data.data-end.row <i class="fa fa-calendar" aria-hidden="true"></i> End: 21.04.2016
+						p.address <i class="fa fa-map-marker" aria-hidden="true"></i> Address: 13 kuibysheva street
+						p.cost <i class="fa fa-money" aria-hidden="true"></i> Cost: free
+				article.row
+					img(src="assets/img/codekit.png", alt="jade rabbit").three.columns
+					.description.nine.columns
+						h5.article-header CodeKit
+						p.article-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quisquam amet tenetur ullam deleniti architecto, optio quidem voluptates molestias maxime!
+						p.data.date-begin.row <i class="fa fa-calendar" aria-hidden="true"></i> Begin: 21.04.2016
+						p.data.data-end.row <i class="fa fa-calendar" aria-hidden="true"></i> End: 21.04.2016
+						p.address <i class="fa fa-map-marker" aria-hidden="true"></i> Address: 13 kuibysheva street
+						p.cost <i class="fa fa-money" aria-hidden="true"></i> Cost: free
+		
+		.contact-us.section
+			.container
+				.row
+					a(href="#" name="contact-us" )
+						h4 Contact us
+				.row
+					form(action="" method="POST")
+						.row
+							label(for="name") Your name:
+							input(type="text", id="name", name="name", size="30", pattern="[a-zA-Z0-9]+").u-full-width
+						.row
+							label(for="email") Your email:
+							input(type="text", id="email", name="email", size="30", pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$").u-full-width
+						.row
+							label(for="message") Your message:
+							textarea(name="message", id="message" rows="7").u-full-width
+						.row
+							input(type="submit" value="Send email").u-full-width.button-primary
+	footer.section
+		.container
+			.row
+				.social
+					a(href="http://vk.com/grasscoworking")
+						<i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+					a(href="https://www.facebook.com/grasscoworking/?fref=nf")
+						<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+					a(href="#")
+						<i class="fa fa-slack fa-2x" aria-hidden="true"></i>
+			.row
+				a(href="#")
+						img(src="assets/img/coworking-logo2.png", alt="grass coworking header logo").logo
+			.row
+				.subscribe
+					a(href="#").button Subscribe
+
+	.popup-login.section.login-window
+			.popup-login-container.container
+				.row
+					h4 Log in
+				form(action="" method="")
+					.row
+						label(for="username") Username:
+						input(type="text", id="username", name="username", size="30" pattern="^[A-Za-z0-9_]{1,15}$").u-max-full-width
+					.row
+						label(for="password") Password:
+						input(class="password" type="password" name="password" size="30", pattern=".{6,}").u-max-full-width
+					.row
+						label(class="show-password" for="showpasscheckbox-label" title="Show the password as plain text") Show password: 
+						input(class="showpasscheckbox" type="checkbox", name="show-password", value="show password")
+					.row
+						button.action.button.close-login.u-pull-left Close <i class="fa fa-times" 	aria-hidden="true"></i>
+						input(type="submit" value="login").submit-login.button-primary.u-pull-right
+
+	.popup-subscribe.section.subscribe-window
+			.popup-subscribe-container.container
+				.row
+					h4 Subscribe
+				form(action="" method="")
+					.row
+						label(for="username-sub") Username:
+						input(type="text", id="username-sub", name="username-sub", size="30", pattern="[a-zA-Z0-9]+").u-max-full-width
+					.row
+						label(for="email-sub") Email:
+						input(type="email", id="email-sub", name="email-sub", size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$").u-max-full-width
+					.row.u-max-full-width
+						button.action.button.close-subscribe.u-pull-left Close <i class="fa fa-times" aria-hidden="true"></i>
+						input(type="submit" value="subscribe").submit-subscribe.button-primary.u-pull-right

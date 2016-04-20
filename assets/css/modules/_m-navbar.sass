@@ -1,0 +1,115 @@
+nav
+	background-color: #fff
+	position: fixed
+	top: 0
+	z-index: 99
+	left: 0
+	width: 100%
+	margin: 0 auto
+	border: 1px solid #D1D1D1
+	height: 80px
+
+	a.logo
+		white-space: nowrap
+		text-decoration: none
+
+		img
+			max-width: 55px
+			min-width: 55px
+			margin: 15px 10px 15px 0px
+
+			@media (max-width: 760px)
+				width: 50%
+
+		span
+			display: inline-block
+			position: absolute
+			top: 25px
+			font-weight: bold
+			text-align: left
+			color: #000
+			font-size: 2rem
+
+			@media (max-width: 760px)
+				font-size: 2rem
+
+			@media (max-width: 550px)
+				top: 30px
+				font-size: 1.5rem
+
+	.menu
+		padding-top: 15px
+
+		.hamburger
+			margin-top: 10px
+			cursor: pointer
+
+			@media (max-width: 1001px)
+				display: block
+		
+			@media (min-width: 1001px)
+				display: none
+
+
+		ul
+			display: inline-block
+			list-style: none
+			margin-bottom: 0
+			text-align: center
+
+			@media (max-width: 1000px)
+				position: absolute
+				top: 80px
+				left: 50%
+				margin-left: -50px
+
+			li
+				display: inline-block
+				padding: 10px 20px 0 0
+
+				@media (max-width: 1000px)
+					display: none
+
+				@media (min-width: 1001px)
+					display: inline-block
+
+
+				@media (max-width: 560px)
+					// display: block
+
+				a
+					text-decoration: none
+					color: #000
+					text-transform: uppercase
+					font-weight: 600
+					font-size: 18px
+					letter-spacing: 1px
+
+					@media (max-width: 1000px)
+						font-size: 14px
+
+					&:hover
+						color: #59BB33
+
+					p
+						margin-bottom: 0
+
+.nav-menu-open
+	height: 300px
+	
+	@media (max-width: 1000px)
+		height: 300px
+
+	@media (min-width: 1000px)
+		height: 80px
+
+	.menu
+		ul
+			li
+				display: block
+
+				@media (max-width: 1000px)
+					padding-right: 0
+
+				@media (min-width: 1000px)
+					display: inline-block

@@ -1,0 +1,58 @@
+.price
+	// margin-top: -15px
+
+	a
+		visibility: hidden
+		// height: 0
+		// display: none
+		height: 100px
+
+		h4
+			height: 0
+			margin: 0
+			text-align: center
+			padding-bottom: -15px
+			
+
+	.offer
+		text-align: center
+		padding: 33px 0px 
+		cursor: pointer
+		// height: 200px
+		margin: 0
+		width: 25%
+		// background-color: #DBE2EF
+		border-left: 1px solid #D1D1D1
+
+		&:nth-child(2):hover
+			background-color: #59BB33
+
+		&:last-child
+			border-right: 1px solid #D1D1D1
+
+		
+		@media (max-width: 750px)
+			width: 50%
+			border-top: 1px solid #D1D1D1
+
+			&:nth-child(3)
+				border-right: 1px solid #D1D1D1				
+
+
+		&:hover
+			// background-color: #33C3F0
+			background-color: #4E90A4
+			transition: background-color 0.44s
+			
+			h5,p
+				color: white
+
+			button
+				color: #fff
+
+				&:hover
+					border: 1px solid #fff
+		
+				
+
+
